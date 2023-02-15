@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="#FFFFFF"
+tools:context=".view.MainFragment"
+android:screenOrientation="sensor"
+   >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="111dp"
+                android:layout_height="41dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="60dp"
+                android:gravity="top"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="0sp"
+                android:text="Games"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:translationY="-0.21sp"
+                />
+    <SearchView
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/searchfield"
+
+        />
+
+
+
+
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="10dp"
+    android:background="#80D2D2D2"
+
+    tools:layout_editor_absoluteX="-1dp"
+    />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_list"
+        app:spanCount="2"
+        />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/coordinator_layout"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/white"-->
+<!--tools:context=".ui.MainFragment">-->
+
+<!--<com.google.android.material.appbar.AppBarLayout-->
+<!--    android:id="@+id/app_bar_layout"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+
+<!--    app:elevation="0dp">-->
+
+<!--    <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--        android:id="@+id/collapsing_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+<!--        app:titleEnabled="false"-->
+<!--        app:toolbarId="@+id/toolbar">-->
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:background="#FFFFFF"-->
+
+<!--            android:screenOrientation="sensor">-->
+
+<!--            <SearchView-->
+<!--                android:id="@+id/search_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginTop="109dp"-->
+<!--                android:layout_marginStart="17dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/searchfield"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/title"-->
+<!--                android:layout_width="111dp"-->
+<!--                android:layout_height="41dp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginStart="19dp"-->
+<!--                android:layout_marginTop="60dp"-->
+<!--                android:gravity="top"-->
+<!--                android:letterSpacing="0.01"-->
+<!--                android:lineSpacingExtra="0sp"-->
+<!--                android:text="Games"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="34sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:translationY="-0.21sp" />-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_marginTop="157dp"-->
+<!--                android:background="#80D2D2D2"-->
+
+<!--                tools:layout_editor_absoluteX="-1dp" />-->
+
+
+
+
+
+
+<!--        </FrameLayout>-->
+
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            app:layout_collapseMode="pin"-->
+<!--            >-->
+
+<!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:text="First Fragment"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textSize="16sp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textStyle="bold" />&ndash;&gt;-->
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+<!--    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--</com.google.android.material.appbar.AppBarLayout>-->
+
+
+
+
+
+<!--<ProgressBar-->
+<!--    android:id="@+id/progress_bar"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:visibility="gone" />-->
+
+<!--<androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--    android:id="@+id/refresh_layout"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/mRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="160dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        tools:listitem="@layout/item_list"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+
+<!--        />-->
+
+<!--</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
