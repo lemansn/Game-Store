@@ -40,6 +40,8 @@ Navigation - Fragment routing.
 
 Glide - for loading images.
 
+Bars - Search Bar and Navigation Bar.
+
 
 
 
